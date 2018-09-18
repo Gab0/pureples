@@ -26,8 +26,10 @@ params = {"initial_depth": 1,
           "activation": "sigmoid"}
 
 # Config for CPPN.
-config = neat.config.Config(neat.genome.DefaultGenome, neat.reproduction.DefaultReproduction,
-                            neat.species.DefaultSpeciesSet, neat.stagnation.DefaultStagnation,
+config = neat.config.Config(neat.genome.DefaultGenome,
+                            neat.reproduction.DefaultReproduction,
+                            neat.species.DefaultSpeciesSet,
+                            neat.stagnation.DefaultStagnation,
                             'config_cppn_pole_balancing')
 
 

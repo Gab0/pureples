@@ -119,7 +119,7 @@ class ESNetwork:
     def pruning_extraction(self, coord, p, outgoing):
         for c in p.cs:
 
-            d_left, d_right, d_top, d_bottom = None, None, None, None
+            d_left, d_right, d_top, d_bottom = 0, 0, 0, 0
 
             if self.variance(c) > self.variance_threshold:
                 self.pruning_extraction(coord, c, outgoing)
